@@ -3,11 +3,12 @@ import configDotenv from './configs/configDotenv.js';
 import recordsRouter from './routes/recordsRouter.js';
 import cors from 'cors';
 import __dirname from '../dirname.js';
-
-console.log(__dirname)
+import connection from './database/connection.js';
 
 const app = express();
-const PORT=configDotenv.PORT;
+const PORT=configDotenv.app.PORT
+
+connection();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
