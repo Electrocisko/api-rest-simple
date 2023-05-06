@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "2f71a957-3972-49ed-bdc3-ba474e3c5712",
+		"name": "maiden",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21524262",
+		"_collection_link": "https://restless-flare-766134.postman.co/workspace/Curso-Coderhouse-Backend~85d5600d-1147-47f6-8beb-a31b73a56ae8/collection/21524262-2f71a957-3972-49ed-bdc3-ba474e3c5712?action=share&creator=21524262&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/records",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"\",\r\n    \"category\": \"estudio\",\r\n    \"release\": \"01/01/2000\",\r\n    \"recorded\": \"estudio\",\r\n    \"imageUrl\": \"link url\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/records",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/record/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/record/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"record",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/manyRecords",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n{\"name\":\"IRON MAIDEN\",\"category\":\"studio\",\"release\":\"14/04/1980\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/iron-maiden-extended-art-packshot-764.JPG\"},\r\n{\"name\":\"KILLERS\",\"category\":\"studio\",\"release\":\"02/02/1981\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/album-killers.jpg\"},\r\n{\"name\":\"THE NUMBER OF THE BEAST\",\"category\":\"studio\",\"release\":\"22/03/1982\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/album-number-of-the-beast.jpg\"},\r\n{\"name\":\"PIECE OF MIND\",\"category\":\"studio\",\"release\":\"16/05/1983\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/album-piece-of-mind.jpg\"},\r\n{\"name\":\"POWERSLAVE\",\"category\":\"studio\",\"release\":\"03/09/1994\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/album-power-slave.jpg\"},\r\n{\"name\":\"SOMEWHERE IN TIME\",\"category\":\"studio\",\"release\":\"29/09/1986\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/album-somewhere-in-time.jpg\"},\r\n{\"name\":\"SEVENTH SON OF A SEVENTH SON\",\"category\":\"studio\",\"release\":\"11/04/1988\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/album-seventh-son.jpg\"},\r\n{\"name\":\"NO PRAYER FOR THE DYING\",\"category\":\"studio\",\"release\":\"01/10/1990\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/album-no-prayer-for-the-dying.jpg\"},\r\n{\"name\":\"FEAR OF THE DARK\",\"category\":\"studio\",\"release\":\"11/05/1992\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/album-fear-of-the-dark.jpg\"},\r\n{\"name\":\"THE X FACTOR\",\"category\":\"studio\",\"release\":\"02/05/1995\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/album-the-x-factor.jpg\"},\r\n{\"name\":\"VIRTUAL XI\",\"category\":\"studio\",\"release\":\"23/03/1998\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/album-virtual-xi.jpg\"},\r\n{\"name\":\"BRAVE NEW WORLD\",\"category\":\"studio\",\"release\":\"29/05/2000\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/album-brave-new-world.jpg\"},\r\n{\"name\":\"DANCE OF DEATH\",\"category\":\"studio\",\"release\":\"08/03/2003\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/album-dance-of-death.jpg\"},\r\n{\"name\":\"A MATTER OF LIFE AND DEATH\",\"category\":\"studio\",\"release\":\"28/08/2006\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/album-a-matter-of-life-and-death.jpg\"},\r\n{\"name\":\"THE FINAL FRONTIER\",\"category\":\"studio\",\"release\":\"16/08/2010\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/album-final-frontier.jpg\"},\r\n{\"name\":\"THE BOOK OF SOULS\",\"category\":\"studio\",\"release\":\"04/09/2015\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/album-the-book-of-souls.jpg\"},\r\n{\"name\":\"SENJUTSU\",\"category\":\"studio\",\"release\":\"03/09/2021\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/senjutsu480.jpg\"},\r\n{\"name\":\"LIVE AFTER DEATH\",\"category\":\"live\",\"release\":\"14/10/1985\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/livealbum-liveafterdeath.jpg\"},\r\n{\"name\":\"MAIDEN ENGLAND '88\",\"category\":\"live\",\"release\":\"08/11/1989\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/livealbum-maidenengland88.jpg\"},\r\n{\"name\":\"A REAL LIVE DEAD ONE\",\"category\":\"live\",\"release\":\"22/09/1998\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/livealbum-areallivedeadone.jpg\"},\r\n{\"name\":\"ROCK IN RIO\",\"category\":\"live\",\"release\":\"25/03/2002\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/livealbum-rockinrio.jpg\"},\r\n{\"name\":\"DEATH IN THE ROAD\",\"category\":\"live\",\"release\":\"29/08/2005\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/livealbum-deathontheroad.jpg\"},\r\n{\"name\":\"FLIGHT 666\",\"category\":\"live\",\"release\":\"22/05/2009\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/livealbum-flight666.jpg\"},\r\n{\"name\":\"EN VIVO\",\"category\":\"live\",\"release\":\"23/03/2012\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/livealbum-envivo.jpg\"},\r\n{\"name\":\"THE BOOK OF SOULS: LIVE CHAPTER\",\"category\":\"live\",\"release\":\"17/11/2017\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/live-chapter-(large)-web.jpg\"},\r\n{\"name\":\"NIGHTS OF THE DEAD, LEGACY OF THE BEAST: LIVE IN MEXICO CITY\",\"category\":\"live\",\"release\":\"20/11/2020\",\"imageUrl\":\"https://www.ironmaiden.com/media/discography/thumbnail/notd_cover.jpg\"}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/manyRecords",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"manyRecords"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/records",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"records"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

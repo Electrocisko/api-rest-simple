@@ -4,6 +4,7 @@ const recordsCollection = 'records';
 
 const RecordsSchema = new mongoose.Schema({
     name: String,
+    category: String,
     release: String,
     recorded: String,
     imageUrl: String
