@@ -1,8 +1,6 @@
 import {discosmaiden} from '../models/records.js';
 import {isValidObjectId} from 'mongoose';
 
-
-
 const getRecords = async (req,res) => {
     try {
         const records = await discosmaiden.find().lean();
