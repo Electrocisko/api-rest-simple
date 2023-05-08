@@ -17,6 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.static(__dirname+'/public'));
 
+app.set('view engine', 'ejs');
+
 
 app.get('/',(req,res) => {
     res.send('<h1> Pagina Home Api Rest Discos de Maiden</h1>')

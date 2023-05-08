@@ -1,4 +1,4 @@
-import {discosmaiden} from '../models/records.js';
+import {discosmaiden} from '../models/Records.js';
 import {isValidObjectId} from 'mongoose';
 
 const getRecords = async (req,res) => {
